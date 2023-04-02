@@ -1,0 +1,172 @@
+.get-started {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:  0px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .get-started:hover {
+    background-color: #3e8e41;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+  }
+
+
+.appointment{
+  display: flex;
+  justify-content: center;
+}
+  .appointment-btn{
+      background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:  0px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  .appointment-btn:hover {
+    background-color: #3e8e41;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+  }
+
+/* Footer  */
+footer {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 40px 0;
+  }
+
+  .container1 {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+
+<!--Social Media-->
+.social-media-icons {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social-media-icons a {
+margin: 0 5px;
+}
+
+.social-media-icons img {
+height: 30px;
+width: auto;
+}
+
+.caro{
+color: black;
+font-weight: 900;
+}
+
+
+
+/* Services  */
+.image-container {
+margin: 20px auto;
+max-width: 800px;
+}
+
+.image-row {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.image-col {
+margin: 20px;
+display: flex;
+flex-direction: column;
+}
+
+.image-wrapper {
+position: relative;
+max-width: 400px;
+margin-bottom: 20px;
+}
+
+.image-wrapper img {
+display: block;
+width: 100%;
+height: auto;
+transition: transform 0.3s;
+}
+
+.image-wrapper:hover img {
+transform: scale(1.1);
+}
+
+.image-wrapper p{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+}
+
+.service-info{
+text-align: center;
+font-weight: 700;
+justify-content: center;
+color: rgb(164, 84, 204);
+
+}
+
+.service-info p{
+font-size: 20px;
+padding: 10px;
+margin: 10px;
+color: coral;
+
+}

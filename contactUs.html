@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="style.css">
+
+<style>
+   
+
+.map-wrapper {
+    position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.map-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.form-group  {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.background-image , p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+   
+}
+
+footer {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 40px 0;
+  }
+
+  .container1 {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+
+<!--Social Media-->
+.social-media-icons {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social-media-icons a {
+margin: 0 5px;
+}
+
+.social-media-icons img {
+height: 30px;
+width: auto;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html ">
+        <img src="New Dentist Images/Logo.jpg" alt="SMILE" width="60" height="50">
+      </a>
+          
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #e3f2fd;" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=" About us.html">About us</a>
+          </li>
+
+          <!-- For Services -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Services.html">Services</a>
+          </li>
+          <!-- For New Patients -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              New Patient
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">First Time</a></li>
+              <li><a class="dropdown-item" href="#">Special Offers</a></li>
+              <li><a class="dropdown-item" href=" appointmentForm.html">Patient Form</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+          </li>
+        </ul>
+                <button class="get-started" onclick="window.location.href=' appointmentForm.html'">Book Appointment</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar Ends-->
+
+
+
+
+  <div class="background-image">
+    <p style="color: darkviolet; font-size: 24px; "  >
+        Welcome to our dental clinic! We provide a wide range of dental services to help you achieve and maintain optimal oral health.
+      </p>
+    <img src="New Dentist Images/Img-12.webp " alt="">
+  </div>
+
+  <div>
+
+    <h1>Contact Us</h1>
+    
+    <div class="map-wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6420264869627!2d-122.41941648533972!3d37.77492977955615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807afcebe8b7%3A0x23fa7d1c8b61530f!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1618454911594!5m2!1sen!2sus" 
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <p>
+      <strong><i>Smile</i> Clinic</strong><br />
+      123 Main St.<br />
+      Anytown, USA 12345<br />
+      Phone: 555-555-5555<br />
+    </p>
+    
+    <h2>Get in Touch with Us</h2>
+    <form action="" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="submit-btn">
+<input type="submit" value="Send Message">
+      </div>
+      
+    </form>
+  </div>
+
+
+
+
+
+
+<!--Footer-->
+  <footer>
+    <div class="container1">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Contact Us</h3>
+          <p>123 Main Street, Anytown USA</p>
+          <p>Phone: 555-555-5555</p>
+          <p>Email: info@yourclinic.com</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Get Directions</h3>
+          <div style="width: 100%; height: 300px;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.881566905724!2d-122.4194156846721!3d37.77492987975768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c8b72f9b7%3A0xf34d8c8ec98a654f!2sGolden%20Gate%20Park!5e0!3m2!1sen!2sus!4v1623982322473!5m2!1sen!2sus"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <h3>Legal</h3>
+          <p>© 2023 Smile Clinic. All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="social-media-icons">
+        <h3>Follow us</h3>
+        <a href="https://www.facebook.com"><img src="New Dentist Images/Social Media/Dentist Facebook.png " alt="Facebook"></a>
+        <a href="https://www.twitter.com"><img src="New Dentist Images/Social Media/Dentist Twitter.png  " alt="Twitter"></a>
+        <a href="https://www.instagram.com"><img src="New Dentist Images/Social Media/Dentist Insta.avif" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+
+
+    </script>

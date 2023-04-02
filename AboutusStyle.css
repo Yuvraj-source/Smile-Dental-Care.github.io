@@ -1,0 +1,177 @@
+.container-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1,
+h2 {
+    text-align: center;
+    padding: 10px;
+    font-weight: 800;
+    color: darkviolet;
+}
+
+/*Staff  */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: row;
+}
+
+.tile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.tile:hover .caption {
+    transform: rotateX(0deg);
+}
+
+
+.services-list {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Dentist Room  */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60vh;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: rgb(232, 194, 82);
+     width: 100%;
+    padding: 0px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.get-started {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    display: block; /* set the button to a block-level element */
+   margin: auto; 
+
+}
+
+.get-started:hover {
+    background-color: #3e8e41;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+background-color: #f8f8f8;
+color: #333;
+padding: 40px 0;
+}
+
+.container1 {
+max-width: 960px;
+margin: 0 auto;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+.col-md-4 {
+flex: 0 0 33.3333%;
+max-width: 33.3333%;
+padding: 0 15px;
+}
+
+h3 {
+font-size: 18px;
+margin-bottom: 20px;
+}
+
+p {
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 20px;
+}
+
+.satisfaction{
+text-align: center;
+}
+
+body{
+font-weight: 700;
+}
+
+.image-container p {
+font-size: 35px;
+}
+
+.social-media-icons {
+display: flex;
+justify-content: left;
+align-items: center;
+}
+
+.social-media-icons a {
+margin: 0 5px;
+}
+
+.social-media-icons img {
+height: 30px;
+width: auto;
+}
+
+
+
