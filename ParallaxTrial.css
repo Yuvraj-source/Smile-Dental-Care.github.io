@@ -11,8 +11,8 @@
     color: darkviolet;
   }
 
-
-  .container {
+/* Denstist Team */
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -20,24 +20,50 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    
+    position: relative; /* Add position relative */
+    perspective: 1000px; /* Add perspective */
   }
-
+  
   .tile {
-    position: relative;
+    position: absolute; /* Change position to absolute */
+    top: 0; /* Add top: 0 */
+    left: 0; /* Add left: 0 */
     width: 300px;
     height: 300px;
     margin: 20px;
     overflow: hidden;
-    transform: perspective(1000px);
-    transition: all 0.5s ease;
-    
+    transform: translateZ(0); /* Change to translateZ */
+    transition: all 0.1s ease;
   }
+  
+  .tile:nth-of-type(1) {
+    transform: translateX(0) translateY(0) translateZ(0);
+    z-index: 5;
+  }
+  
+  .tile:nth-of-type(2) {
+    transform: translateX(20px) translateY(20px) translateZ(-100px); 
+    z-index: 4; 
+  }
+  
+  .tile:nth-of-type(3) {
+    transform: translateX(40px) translateY(40px) translateZ(-200px); 
+  }
+  
+  .tile:nth-of-type(4) {
+    transform: translateX(60px) translateY(60px) translateZ(-300px); 
 
+  }
+  
+  .tile:nth-of-type(5) {
+    transform: tran
+  }
+  
   .tile:hover {
-    transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) scale(1.1);
+    transform: translateZ(0) rotateX(10deg) rotateY(-10deg) scale(1.1);
+    z-index: 6; 
   }
-
+  
   .tile img {
     position: absolute;
     top: 0;
@@ -48,11 +74,11 @@
     transition: all 0.5s ease;
     border: 1px solid rgb(197, 159, 54);
   }
-
+  
   .tile:hover img {
     transform: scale(1.2);
   }
-
+  
   .tile .overlay {
     position: absolute;
     bottom: 0;
@@ -64,21 +90,21 @@
     transform: translateY(100%);
     transition: all 0.5s ease;
   }
-
+  
   .tile:hover .overlay {
     transform: translateY(0);
   }
-
+  
   .tile h3 {
     margin-top: 0;
     font-size: 1.5em;
   }
-
+  
   .tile p {
     margin-bottom: 0;
     font-size: 1.5em;
   }
-
+  
   h1 {
     text-align: center;
     color: darkviolet;
@@ -93,7 +119,7 @@
   }
 
   .get-started {
-    background-color: #00bfff;
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -109,7 +135,7 @@
   }
 
   .get-started:hover {
-    background-color: #00a5d5;
+    background-color: #3e8e41;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
   }
@@ -189,18 +215,18 @@ height: 30px;
 width: auto;
 }
 
-
+.caro{
+color: black;
+font-weight: 900;
+}
 
 body{
     font-weight: 600;
 }
 
-.carousel-inner p {
-  font-size: 2.5rem;
-  font-weight: 700;
-  border: 5px;
-  color: #119687;
-
-}
-
-
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  

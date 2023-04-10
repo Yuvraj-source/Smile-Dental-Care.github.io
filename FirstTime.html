@@ -4,14 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Request Form</title>
+    <title>First Time Visit</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href=" appointmentForm.css">
+
+   <link rel="stylesheet" href="style.css">
+
+<style>
+  .code-container {
+			width: 70%;
+			margin: 10px auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0px 0px 20px #ccc;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+     h2 {
+			color: orange;
+			
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		ul {
+			margin-top: 0;
+			padding-left: 20px;
+			margin-bottom: 20px;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			grid-gap: 10px;
+      
+		}
+		
+
+body {
+
+    font-weight: 600;
+}
+
+header {
+	
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+  color: darkviolet;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+h2 {
+	
+	margin-bottom: 20px;
+}
 
 
+
+p {
+	margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 40px 0;
+  }
+
+  .container1 {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+
+<!--Social Media-->
+.social-media-icons {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social-media-icons a {
+margin: 0 5px;
+}
+
+.social-media-icons img {
+height: 30px;
+width: auto;
+}
+.get-started {
+    background-color: #00bfff;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      margin:  0px;
+      cursor: pointer;
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .get-started:hover {
+      background-color: #00a5d5;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+      transform: scale(1.1);
+    }
+    
+    .btn-container{
+      display: flex;
+      justify-content: center;
+    }
+
+
+</style>
 </head>
 <body>
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 80px;">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html ">
@@ -48,63 +190,70 @@
     </div>
 </nav>
 
- <!--Booking-->
+<!--   -->
 
-  <div class="booking-container">
-    <div class="booking-background">
-      
-      <div class="booking-overlay"></div>
-    </div>
-    <div class="booking-form">
-      <h2 class="booking-title">Schedule an Appointment</h2>
-      <form id="appointment-form">
-        <div class="form-field">
-          <label for="name"><i class="fas fa-user"></i> Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-field">
-          <label for="age"><i class="fas fa-birthday-cake"></i> Age:</label>
-          <input type="number" id="age" name="age" required>
-        </div>
-        <div class="form-field">
-          <label for="phone"><i class="fas fa-phone"></i> Phone:</label>
-          <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="form-field">
-          <label for="email"><i class="fas fa-envelope"></i> Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-field">
-          <label for="date"><i class="fas fa-calendar-alt"></i> Appointment Date:</label>
-          <input type="date" id="date" name="date" required>
-        </div>
-        <div class="form-field">
-          <label for="time"><i class="fas fa-clock"></i> Appointment Time:</label>
-          <input type="time" id="time" name="time" required>
-        </div>
-        <input type="submit" value="Book Appointment">
-      </form>
-    </div>
-  </div>
+
+
+<div class="code-container">
+  <header>
+    <h1>New Patient Information</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Forms and Referrals</h2>
+      <ul>
+        <li>Complete your new patient forms.</li>
+        </ul>
+        <ul>
+        <li>If you are being referred, have your current provider complete a referral form.</li>
+      </ul>
+        <ul>
+        <li>Have any x-rays or records transferred to us by your previous provider.</li>
+      </ul>
+    </section>
   
-  <!--Thank You-->
-  <div class="thank-you-popup" id="thank-you-popup">
-    <div class="popup-content">
-      <h2>Thank You!</h2>
-      <p>Your appointment has been booked successfully.</p>
-      <button class="close-popup" id="close-popup">Close</button>
-    </div>
-  </div>
+    <section>
+      <h2>Check-In and Appointment</h2>
+      <ul>
+        <li>Plan to arrive at least 10 min early for check-in process.</li>
+        </ul>
+        <ul>
+        <li>Expect appointment to last 1 hour.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>During your first visit to the dentist you can expect</h2>
+
+      <ul>
+        <li>A comprehensive dental exam</li>
+        </ul>
+        <ul>
+        <li>X-rays to check for cavities and other dental problems</li>
+        </ul>
+        <ul>
+        <li>A cleaning to remove plaque and tartar buildup</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<div class="btn-container">
+  <div class="btn-book" >
+    <button class="get-started" onclick="window.location.href=' appointmentForm.html'">Book Appointment</button>
+</div>
+</div>
+
+
 
       <!--Footer-->
-      <footer>
+    <footer>
         <div class="container1">
           <div class="row">
             <div class="col-md-4">
               <h3>Contact Us</h3>
-              <p>123 Main Street,Abc Town </p>
-              <p>Phone: 555-5555</p>
-              <p>Email: smile@gmail.com</p>
+              <p>123 Main Street, Anytown USA</p>
+              <p>Phone: 555-555-5555</p>
+              <p>Email: info@yourclinic.com</p>
             </div>
             <div class="col-md-4">
               <h3>Get Directions</h3>
@@ -128,68 +277,14 @@
           </div>
         </div>
       </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
-</script>
-
-      <script>
-        
-
-const form = document.getElementById('appointment-form');
-const clinicOpenTime = 10; 
-const clinicCloseTime = 22; 
-
-
-const today = new Date().toISOString().split('T')[0];
-document.getElementById('date').setAttribute('min', today);
-
-
-form.addEventListener('submit', (event) => {
   
-  event.preventDefault();
-
   
-  const currentTime = new Date().getHours();
-
   
-  const name = document.getElementById('name').value;
-  const age = document.getElementById('age').value;
-  const phone = document.getElementById('phone').value;
-  const email = document.getElementById('email').value;
-  const date = document.getElementById('date').value;
-  const time = document.getElementById('time').value;
-
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
   
-  const appointmentTime = parseInt(time.split(':')[0]);
-
- 
-  if (appointmentTime < clinicOpenTime || appointmentTime >= clinicCloseTime) {
-    alert('Appointment time should be between 10am to 10pm');
-    return;
-  }
-
- 
-  const confirmBooking = confirm(`Please confirm your booking details:\n\nName: ${name}\nAge: ${age}\nPhone: ${phone}\nEmail: ${email}\nDate: ${date}\nTime: ${time}`);
-
   
-  if (confirmBooking) {
-    const thankYouPopup = document.getElementById('thank-you-popup');
-    thankYouPopup.style.display = 'block';
-
-    form.reset();
-
-    const closePopupButton = document.getElementById('close-popup');
-    closePopupButton.addEventListener('click', () => {
-      thankYouPopup.style.display = 'none';
-    });
-  }
-});
-
-
-      </script>
-      
+        </script>
     
 </body>
 </html>
