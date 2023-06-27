@@ -12,7 +12,7 @@
   }
 
 
-  .container {
+  .outer-box {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -131,15 +131,16 @@
     font-size: 30px;
 
     display: inline-block;
-    /* to make sure the span takes up the necessary width */
+   
     padding: 2rem;
-    /* adjust padding as desired */
+  
     border-radius: 5px;
-    /* to create rounded corners */
+ 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
-  footer {
+  
+footer {
     background-color: #f8f8f8;
     color: #333;
     padding: 40px 0;
@@ -190,11 +191,6 @@ width: auto;
 }
 
 
-
-body{
-    font-weight: 600;
-}
-
 .carousel-inner p {
   font-size: 2.5rem;
   font-weight: 700;
@@ -203,4 +199,12 @@ body{
 
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
 
+.nav-link{
+  margin: 70px;
+}
