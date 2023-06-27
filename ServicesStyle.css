@@ -154,3 +154,28 @@ h4, h1 {
   font-size: 50px;
 }
 
+.get-started {
+  background-color: #00bfff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin:  0px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.get-started:hover {
+  background-color: #00a5d5;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.nav-link{
+  margin-left:150px;
+}
